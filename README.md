@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-    <img alt="Homepage" src="/screenshots/main_screen.png" height="500"/>
+    <img alt="Homepage" src="screenshots/main_screen.png" height="450px"/>
 </p>
 
 ## Introduction
