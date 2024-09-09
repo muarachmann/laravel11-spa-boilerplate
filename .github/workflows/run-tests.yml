@@ -54,7 +54,6 @@ jobs:
       - name: Copy .env && Generate keys
         run: |
           cp .env.ci .env
-          composer clear-all
           php artisan key:generate
         env:
           DB_CONNECTION: mysql
