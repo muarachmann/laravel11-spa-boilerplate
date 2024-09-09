@@ -1,0 +1,11 @@
+.pagination {
+    @apply inline-flex items-center space-x-2;
+}
+
+li.page-item {
+    @apply flex items-center text-center justify-center w-10 h-10 rounded-lg py-2 px-3 bg-white border border-gray-300 hover:bg-theme-1 hover:text-white cursor-pointer;
+
+    &.active {
+        @apply bg-theme-1 text-white border-theme-1;
+    }
+}

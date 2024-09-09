@@ -1,0 +1,25 @@
+.table {
+    @apply w-full;
+    th {
+        @apply font-medium px-5 py-3;
+    }
+    td {
+        @apply px-5 py-3 bg-gray-200;
+    }
+    &.table--sm {
+        th {
+            @apply px-4 py-2 dark:bg-dark-1;
+        }
+        td {
+            @apply px-4 py-2 my-1;
+        }
+    }
+}
+
+tbody {
+    @apply bg-white dark:bg-dark-2;
+}
+
+thead {
+    @apply bg-white dark:bg-dark-2 dark:border-theme-1;
+}

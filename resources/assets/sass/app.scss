@@ -1,0 +1,31 @@
+/**
+ * app.scss
+ * app platform stylesheet using Tailwind css combined with Sass
+ * @author Mua N. Laurent <muarachmann@gmail.com>
+ * @version 1.0.0
+ * @since September 2024
+ */
+
+// Fonts
+@import "../fonts/catamaran";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Animations
+@import "intro";
+
+// 3rd Parties
+@import "vue-multiselect/dist/vue-multiselect.min.css";
+@import "vue-tel-input/dist/vue-tel-input.css";
+@import 'floating-vue/dist/style.css';
+
+// Components
+@import "global";
+@import "table";
+@import "input";
+@import "checkbox";
+@import "tailwind";
+@import "modal";
+@import 'pagination';

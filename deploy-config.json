@@ -1,0 +1,11 @@
+[
+    {
+        "name": "app-server",
+        "ip": "XX.XXX.XXX.XX",
+        "username": "laravel",
+        "port": "22",
+        "beforeHooks": "",
+        "afterHooks": "cd ${RELEASE_PATH} && php artisan migrate --force && composer clear-all && php artisan storage:link",
+        "path": "/var/www/laravel-app"
+    }
+]

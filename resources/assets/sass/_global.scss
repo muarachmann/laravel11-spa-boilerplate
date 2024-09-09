@@ -1,0 +1,86 @@
+html {
+    &.dark {
+        @apply bg-dark-1 text-gray-100;
+        body {
+            @apply text-white;
+            *, ::before, ::after {
+                @apply border-transparent;
+            }
+        }
+    }
+    body {
+        -webkit-font-smoothing: antialiased;
+        @apply overflow-x-hidden text-sm bg-white text-gray-800;
+    }
+}
+
+.no-overflow-scroll-container::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.overflow-scroll-container::-webkit-scrollbar {
+    width: 1.8px;
+    height: 6px;
+}
+
+.overflow-scroll-container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px rgba(177, 207, 225, 0.7);
+}
+
+.overflow-scroll-container::-webkit-scrollbar-thumb {
+    @apply bg-theme-1;
+    outline: 1px solid #3b88b4;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 4px;
+    visibility: hidden;
+}
+
+.scrollbar:hover::-webkit-scrollbar {
+    visibility: visible;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 2px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.form-error {
+    @apply text-red-600 p-1;
+}
+
+.box {
+    box-shadow: 0 3px 20px rgb(0 0 0 / 4%);
+    position: relative;
+    border-radius: .375rem;
+    border-color: transparent;
+    background-color: rgba(255,255,255, var(--tw-bg-opacity));
+}
+
+.vti__dropdown-list.below {
+    top: 40px !important;
+}
+
+.default-gradient-inverse {
+    background: rgb(153,0,17);
+    background: linear-gradient(180deg, rgba(153,0,17,0.3646052170868347) 0%, rgba(255,255,255,1) 75%);
+}
+
+.default-gradient {
+    background: rgb(153,0,17);
+    background: linear-gradient(0deg, rgba(153,0,17,0.3646052170868347) 0%, rgba(255,255,255,1) 75%);
+}
+
+.app-menu-item {
+    @apply bg-gradient-to-r from-gray-200 to-white dark:from-gray-600 dark:to-theme-2
+}
