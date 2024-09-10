@@ -74,7 +74,7 @@ jobs:
           DB_PASSWORD: passw0rd
 
       - name: Execute & Run tests
-        run: php artisan test --parallel
+        run: php artisan test
         env:
           DB_CONNECTION: mysql
           DB_DATABASE: laravel
