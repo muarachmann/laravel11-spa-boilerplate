@@ -53,7 +53,7 @@ jobs:
 
       - name: Copy .env && Generate keys
         run: |
-          cp .env.ci .env
+          cp .env.example .env
           php artisan key:generate
         env:
           DB_CONNECTION: mysql
@@ -65,7 +65,7 @@ jobs:
       - name: Run sample Migrations
         run: |
           php artisan migrate --force
-          yes | php artisan db:seed
+          php artisan db:seed
         env:
           DB_CONNECTION: mysql
           DB_DATABASE: laravel
@@ -74,7 +74,7 @@ jobs:
           DB_PASSWORD: passw0rd
 
       - name: Execute & Run tests
-        run: vendor/bin/phpunit
+        run: php artisan test --parallel
         env:
           DB_CONNECTION: mysql
           DB_DATABASE: laravel
